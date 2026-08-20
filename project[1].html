@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<style>
+
+    .loading{
+        position: relative;
+    }
+    .loading-mask{
+        position: absolute ;
+        top: 0px;
+        left:0px;
+        background-color: #111;
+        width: 100%;
+        height: 100%;
+    }
+    .loading-body{
+        position: absolute ;
+        top: 50%;
+        left:50%;
+        transform: translate(-50% ,-50%);
+        background-color: rgba(255, 255, 255, 0.347);
+       color: #ffffff;
+       
+       font-size: 20px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       padding: 20px;
+       gap: 10px;
+      border-radius: 20px;
+      
+    }
+    .loading-body h1 {
+      font-size: 40px;
+      line-height: 50px;
+
+    }
+    .loading-body p ,.loading-body button{
+      font-size: 20px;
+      line-height: 30px;
+    }
+</style>
+</head>
+
+
+
+<body>
+    <DIV class="APP">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand" href="#">FRONT-END</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active"  href="#loading">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONTACT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">PRODUCT</a>
+        </li>
+        <li class="nav-item ms-2">
+          <button class="btn btn-outline-primary" href="#">LOGIN</button>
+        </li>
+      
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+<div class="loading"><div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./imgs/front[3].jpg" class="d-block w-100"  style="height: 90vh;" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./imgs/front[4].jpg" class="d-block w-100" style="height: 90vh;"  alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./imgs/front[7].jpg" class="d-block w-100" style="height: 90vh;"  alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div></div>
+<div class="loading -mask"></div>
+<div class="loading-body">
+    <h1>learn programing</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quis odio sequi. Expedita eligendi enim ab modi ex quas corporis itaque at, atque placeat nulla. Eos placeat consequatur amet natus ut incidunt odio quasi dolorem enim dicta, explicabo facere beatae quo cumque illum iste excepturi doloribus optio suscipit autem voluptas.</p>
+<button class="btn btn-primary">go now</button>
+</div>
+    </DIV>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
+</body>
+</html>
